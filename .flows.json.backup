@@ -1,0 +1,3382 @@
+[
+    {
+        "id": "02998db8a31c49fe",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "88dcfe33996d0d5e",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5a84a84d3d950915",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "90563e868440b145"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 380,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "90563e868440b145",
+                        "port": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "227d5101c3fd28d8",
+        "type": "ui_tab",
+        "name": "Thông số",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a06d7feb74fe6247",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#e016e3",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Bộ đôi số trục chính cao tốc",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "3f9255e50ca28a60",
+        "type": "ui_group",
+        "name": "Nhiệt độ ổ bi 1",
+        "tab": "227d5101c3fd28d8",
+        "order": 1,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e54624d3d2676ea8",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "q",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "88317ef4793944e6",
+        "type": "ui_group",
+        "name": "Nhiệt độ ổ bi 2",
+        "tab": "227d5101c3fd28d8",
+        "order": 1,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "48646f40810eef6a",
+        "type": "ui_tab",
+        "name": "Điều khiển",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8cc2e78da4467327",
+        "type": "ui_group",
+        "name": "Nhiệt độ ổ bi 3",
+        "tab": "227d5101c3fd28d8",
+        "order": 3,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1248b1fc96f56925",
+        "type": "ui_group",
+        "name": "Nhiệt độ ổ bi 4",
+        "tab": "227d5101c3fd28d8",
+        "order": 4,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a2ad898bc9502f96",
+        "type": "ui_group",
+        "name": "Tốc độ quay trục chính",
+        "tab": "227d5101c3fd28d8",
+        "order": 5,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "112c6e1165ba8669",
+        "type": "ui_group",
+        "name": "Điều khiển trục chính",
+        "tab": "48646f40810eef6a",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bb7403a967b736f9",
+        "type": "ui_group",
+        "name": "Điều khiển làm mát dầu-khí",
+        "tab": "48646f40810eef6a",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "949fd4a09f36ac6b",
+        "type": "MySQLdatabase",
+        "name": "db",
+        "host": "sql12.freesqldatabase.com",
+        "port": "3306",
+        "db": "sql12623710",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "cb63bb6802d59327",
+        "type": "ui_tab",
+        "name": "du lieu",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6597e2b654c86771",
+        "type": "ui_group",
+        "name": "",
+        "tab": "cb63bb6802d59327",
+        "order": 1,
+        "disp": true,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2d212ef49e3183fc",
+        "type": "ui_tab",
+        "name": "Tài khoản",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0d0710b88942b8f2",
+        "type": "ui_group",
+        "name": "Tạo tài khoản",
+        "tab": "2d212ef49e3183fc",
+        "order": 1,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fa796a32ad8f2af0",
+        "type": "ui_group",
+        "name": "Danh sách tài khoản",
+        "tab": "2d212ef49e3183fc",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "14087c45d0a4c481",
+        "type": "ui_group",
+        "name": "Đổi mật khẩu",
+        "tab": "2d212ef49e3183fc",
+        "order": 3,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2be4f60b5fb39252",
+        "type": "ui_group",
+        "name": "Signin",
+        "tab": "02e824a2f0f63a6d",
+        "order": 1,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5e3404c48af3a5be",
+        "type": "ui_group",
+        "name": "menu",
+        "tab": "02e824a2f0f63a6d",
+        "order": 2,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "02e824a2f0f63a6d",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "81f16254d3f31558",
+        "type": "ui_link",
+        "name": "VimesLAB",
+        "link": "https://www.vimes.edu.vn",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 6
+    },
+    {
+        "id": "90563e868440b145",
+        "type": "function",
+        "z": "5a84a84d3d950915",
+        "name": "Account Verification",
+        "func": "var accounts = flow.get(\"accounts\") || [{ username: \"1\", password: \"1\" }, { username: \"2\", password: \"2\" }];\n\nvar username = msg.payload.username;\nvar password = msg.payload.password;\n\nif (username === \"1\" && password === \"1\") {\n  msg.payload = \"1\";\n} else if (username === \"2\" && password === \"2\") {\n  msg.payload = \"2\";\n} else {\n  msg.payload = \"3\";\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 202.0000457763672,
+        "y": 75.0000057220459,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5698a85b7d132a17",
+        "type": "mqtt in",
+        "z": "02998db8a31c49fe",
+        "name": "obi1",
+        "topic": "thongso",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e54624d3d2676ea8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 50,
+        "y": 100,
+        "wires": [
+            [
+                "a1f7d6c32804241b",
+                "366a1847908e80b7"
+            ]
+        ]
+    },
+    {
+        "id": "a1f7d6c32804241b",
+        "type": "ui_gauge",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "group": "3f9255e50ca28a60",
+        "order": 2,
+        "width": 7,
+        "height": 7,
+        "gtype": "gage",
+        "title": "",
+        "label": "C",
+        "format": "{{msg.payload.values[0].v.toFixed(1)}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#3ea83e",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "q",
+        "seg2": "w",
+        "diff": false,
+        "className": "",
+        "x": 250,
+        "y": 40,
+        "wires": [],
+        "inputLabels": [
+            "payload.values[0].v"
+        ]
+    },
+    {
+        "id": "0963d9a291058ab1",
+        "type": "ui_chart",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "group": "3f9255e50ca28a60",
+        "order": 1,
+        "width": 7,
+        "height": 6,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#27a027",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 430,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "366a1847908e80b7",
+        "type": "function",
+        "z": "02998db8a31c49fe",
+        "name": "function 2",
+        "func": "msg.payload = msg.payload.values[0].v.toFixed(1);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 120,
+        "wires": [
+            [
+                "0963d9a291058ab1"
+            ]
+        ]
+    },
+    {
+        "id": "bb1d75e48cf6efb1",
+        "type": "mqtt in",
+        "z": "02998db8a31c49fe",
+        "name": "obi2",
+        "topic": "thongso",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e54624d3d2676ea8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 400,
+        "wires": [
+            [
+                "819347130bc40bc1",
+                "58fdf437b92024ae"
+            ]
+        ]
+    },
+    {
+        "id": "819347130bc40bc1",
+        "type": "ui_gauge",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "group": "88317ef4793944e6",
+        "order": 2,
+        "width": 7,
+        "height": 7,
+        "gtype": "gage",
+        "title": "",
+        "label": "C",
+        "format": "{{msg.payload.values[1].v.toFixed(1)}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#3ea83e",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "q",
+        "seg2": "w",
+        "diff": false,
+        "className": "",
+        "x": 290,
+        "y": 360,
+        "wires": [],
+        "inputLabels": [
+            "payload.values[0].v"
+        ]
+    },
+    {
+        "id": "390ea3bffd5be375",
+        "type": "ui_chart",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "group": "88317ef4793944e6",
+        "order": 1,
+        "width": 7,
+        "height": 6,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 450,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "58fdf437b92024ae",
+        "type": "function",
+        "z": "02998db8a31c49fe",
+        "name": "function 3",
+        "func": "msg.payload = msg.payload.values[1].v.toFixed(1);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 460,
+        "wires": [
+            [
+                "390ea3bffd5be375"
+            ]
+        ]
+    },
+    {
+        "id": "b65889c34faad308",
+        "type": "mqtt in",
+        "z": "02998db8a31c49fe",
+        "name": "obi3",
+        "topic": "thongso",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e54624d3d2676ea8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 50,
+        "y": 240,
+        "wires": [
+            [
+                "a97d9b538da3a63e",
+                "6c8d50f4e60df617"
+            ]
+        ]
+    },
+    {
+        "id": "a97d9b538da3a63e",
+        "type": "ui_gauge",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "group": "8cc2e78da4467327",
+        "order": 2,
+        "width": 7,
+        "height": 7,
+        "gtype": "gage",
+        "title": "",
+        "label": "C",
+        "format": "{{msg.payload.values[2].v.toFixed(1)}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#3ea83e",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "q",
+        "seg2": "w",
+        "diff": false,
+        "className": "",
+        "x": 270,
+        "y": 200,
+        "wires": [],
+        "inputLabels": [
+            "payload.values[0].v"
+        ]
+    },
+    {
+        "id": "0753983a98d72099",
+        "type": "ui_chart",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "group": "8cc2e78da4467327",
+        "order": 1,
+        "width": 7,
+        "height": 6,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 470,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c8d50f4e60df617",
+        "type": "function",
+        "z": "02998db8a31c49fe",
+        "name": "function 4",
+        "func": "msg.payload = msg.payload.values[2].v.toFixed(1);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 280,
+        "wires": [
+            [
+                "0753983a98d72099"
+            ]
+        ]
+    },
+    {
+        "id": "3986986171e6c7b0",
+        "type": "mqtt in",
+        "z": "02998db8a31c49fe",
+        "name": "obi4",
+        "topic": "thongso",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e54624d3d2676ea8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 770,
+        "y": 260,
+        "wires": [
+            [
+                "e024d9540aebf8c5",
+                "1023853851714277"
+            ]
+        ]
+    },
+    {
+        "id": "e024d9540aebf8c5",
+        "type": "ui_gauge",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "group": "1248b1fc96f56925",
+        "order": 2,
+        "width": 7,
+        "height": 7,
+        "gtype": "gage",
+        "title": "",
+        "label": "C",
+        "format": "{{msg.payload.values[3].v.toFixed(1)}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#3ea83e",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "q",
+        "seg2": "w",
+        "diff": false,
+        "className": "",
+        "x": 990,
+        "y": 200,
+        "wires": [],
+        "inputLabels": [
+            "payload.values[0].v"
+        ]
+    },
+    {
+        "id": "81aff455b42993d6",
+        "type": "ui_chart",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "group": "1248b1fc96f56925",
+        "order": 1,
+        "width": 7,
+        "height": 6,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1150,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1023853851714277",
+        "type": "function",
+        "z": "02998db8a31c49fe",
+        "name": "function 5",
+        "func": "msg.payload = msg.payload.values[3].v.toFixed(1);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 340,
+        "wires": [
+            [
+                "81aff455b42993d6"
+            ]
+        ]
+    },
+    {
+        "id": "71ace546da6aaaa9",
+        "type": "ui_gauge",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "group": "a2ad898bc9502f96",
+        "order": 2,
+        "width": 7,
+        "height": 7,
+        "gtype": "gage",
+        "title": "{{msg.payload.direction}}",
+        "label": "v/phut",
+        "format": "{{msg.payload.value.toFixed(0)}}",
+        "min": "0",
+        "max": "9600",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "3200",
+        "seg2": "6400",
+        "diff": false,
+        "className": "",
+        "x": 1110,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "053d6528888bc834",
+        "type": "ui_chart",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "group": "a2ad898bc9502f96",
+        "order": 1,
+        "width": 7,
+        "height": 6,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-9600",
+        "ymax": "9600",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1130,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eddda792e07bcf59",
+        "type": "mqtt in",
+        "z": "02998db8a31c49fe",
+        "name": "tocdo",
+        "topic": "thongso",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e54624d3d2676ea8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 730,
+        "y": 120,
+        "wires": [
+            [
+                "395d6373c60ecdc8",
+                "da698719262a9fc6"
+            ]
+        ]
+    },
+    {
+        "id": "aad11e9e63908343",
+        "type": "ui_text",
+        "z": "02998db8a31c49fe",
+        "group": "112c6e1165ba8669",
+        "order": 3,
+        "width": "6",
+        "height": "2",
+        "name": "",
+        "label": "tốc độ đang chọn",
+        "format": "{{msg.payload[0].v}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 630,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "40055298b655e381",
+        "type": "mqtt out",
+        "z": "02998db8a31c49fe",
+        "name": "nhandulieu",
+        "topic": "nhandulieu",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e54624d3d2676ea8",
+        "x": 610,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "19823ba622be88d5",
+        "type": "function",
+        "z": "02998db8a31c49fe",
+        "name": "function 6",
+        "func": "// Sao chép tin nhắn đầu vào vào một biến mới\nvar modifiedMsg = RED.util.cloneMessage(msg);\n\n// Lấy giá trị từ biến vt\nvar v = msg.payload.vt;\n\n// Tạo một mảng WriteValue mới với một phần tử duy nhất\nvar writeValue = {\n    id: \"Channel1.Device1.TOCDO_YEUCAU\",\n    v: parseFloat(v) // Chuyển đổi giá trị thành số thực (float)\n};\n\nvar writeValues = [writeValue];\n\n// Cập nhật payload của tin nhắn với mảng WriteValue mới\nmodifiedMsg.payload = writeValues;\n\n// Truyền tin nhắn đã sửa đổi đến node MQTT để gửi đi\nreturn modifiedMsg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 900,
+        "wires": [
+            [
+                "40055298b655e381",
+                "aad11e9e63908343"
+            ]
+        ]
+    },
+    {
+        "id": "ab3a1de31aa310d2",
+        "type": "mqtt out",
+        "z": "02998db8a31c49fe",
+        "name": "nhandulieu",
+        "topic": "nhandulieu",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e54624d3d2676ea8",
+        "x": 430,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "45cac72b1bb85439",
+        "type": "ui_switch",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "label": "Bật/ tắt trục chính",
+        "tooltip": "",
+        "group": "112c6e1165ba8669",
+        "order": 3,
+        "width": "6",
+        "height": "2",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "[{\"id\":\"Channel1.Device1.START\",\"v\":true},{\"id\":\"Channel1.Device1.STOP\",\"v\":false}]",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "[{\"id\":\"Channel1.Device1.START\",\"v\":false},{\"id\":\"Channel1.Device1.STOP\",\"v\":true}]",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 150,
+        "y": 1020,
+        "wires": [
+            [
+                "ab3a1de31aa310d2"
+            ]
+        ]
+    },
+    {
+        "id": "69ccf57f21747fdc",
+        "type": "mqtt out",
+        "z": "02998db8a31c49fe",
+        "name": "nhandulieu",
+        "topic": "nhandulieu",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e54624d3d2676ea8",
+        "x": 430,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "566dc0fcf36cb2d3",
+        "type": "mqtt out",
+        "z": "02998db8a31c49fe",
+        "name": "nhandulieu",
+        "topic": "nhandulieu",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e54624d3d2676ea8",
+        "x": 610,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "fa2860e2ebc63b38",
+        "type": "ui_switch",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "label": "Bật/tắt bơm dầu",
+        "tooltip": "",
+        "group": "bb7403a967b736f9",
+        "order": 0,
+        "width": "6",
+        "height": "2",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "[{\"id\":\"Channel1.Device1.BAT_BOMDAU\",\"v\":true},{\"id\":\"Channel1.Device1.TAT_BOMDAU\",\"v\":false}]",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "green",
+        "offvalue": "[{\"id\":\"Channel1.Device1.BAT_BOMDAU\",\"v\":false},{\"id\":\"Channel1.Device1.TAT_BOMDAU\",\"v\":true}]",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "red",
+        "animate": true,
+        "className": "",
+        "x": 140,
+        "y": 1100,
+        "wires": [
+            [
+                "69ccf57f21747fdc"
+            ]
+        ]
+    },
+    {
+        "id": "755fbe82701bbcfe",
+        "type": "ui_switch",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "label": "bơm dầu tự động",
+        "tooltip": "",
+        "group": "bb7403a967b736f9",
+        "order": 1,
+        "width": "6",
+        "height": "2",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "[{\"id\":\"Channel1.Device1.BOMDAU_AUTO\",\"v\":true},{\"id\":\"Channel1.Device1.autotat\",\"v\":false}]",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "[{\"id\":\"Channel1.Device1.BOMDAU_AUTO\",\"v\":false},{\"id\":\"Channel1.Device1.autotat\",\"v\":true}]",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 150,
+        "y": 1160,
+        "wires": [
+            [
+                "566dc0fcf36cb2d3"
+            ]
+        ]
+    },
+    {
+        "id": "cc2ad20c9f14512f",
+        "type": "ui_switch",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "label": "Bật/tắt máy nén khí",
+        "tooltip": "",
+        "group": "bb7403a967b736f9",
+        "order": 2,
+        "width": "6",
+        "height": "2",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "[{\"id\":\"Channel1.Device1.BAT_MAYNENKHI\",\"v\":true},{\"id\":\"Channel1.Device1.TAT_MAYNENKHI\",\"v\":false}]",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "[{\"id\":\"Channel1.Device1.BAT_MAYNENKHI\",\"v\":false},{\"id\":\"Channel1.Device1.TAT_MAYNENKHI\",\"v\":true}]",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 150,
+        "y": 1220,
+        "wires": [
+            [
+                "048604055387ee61"
+            ]
+        ]
+    },
+    {
+        "id": "048604055387ee61",
+        "type": "mqtt out",
+        "z": "02998db8a31c49fe",
+        "name": "nhandulieu",
+        "topic": "nhandulieu",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e54624d3d2676ea8",
+        "x": 430,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "395d6373c60ecdc8",
+        "type": "function",
+        "z": "02998db8a31c49fe",
+        "name": "function 8",
+        "func": "msg.payload = msg.payload.values[4].v.toFixed(0);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 160,
+        "wires": [
+            [
+                "053d6528888bc834"
+            ]
+        ]
+    },
+    {
+        "id": "aaa9778cd75b1bea",
+        "type": "mysql",
+        "z": "02998db8a31c49fe",
+        "mydb": "949fd4a09f36ac6b",
+        "name": "",
+        "x": 590,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "098639319cfec11a",
+        "type": "function",
+        "z": "02998db8a31c49fe",
+        "name": "function 9",
+        "func": "// Extract the values from msg.payload.values\nvar o1 = msg.payload.values[0].v.toFixed(1);\nvar o2 = msg.payload.values[1].v.toFixed(1);\nvar o3 = msg.payload.values[2].v.toFixed(1);\nvar o4 = msg.payload.values[3].v.toFixed(1);\nvar vt = msg.payload.values[4].v.toFixed(0);\nvar currentDate = new Date();\ncurrentDate.setHours(currentDate.getHours());\n\nvar options = {\n    year: 'numeric',\n    month: '2-digit',\n    day: '2-digit',\n    hour: '2-digit',\n    minute: '2-digit',\n    second: '2-digit',\n    hour12: false,\n    timeZone: 'Asia/Ho_Chi_Minh'\n};\n\nvar t = currentDate.toLocaleString('vi-VN', options).replace(',', '');\n\n// Create the SQL INSERT statement\nvar sql = \"INSERT INTO `database` (`o1`, `o2`, `o3`, `o4`, `vt`, `t`) VALUES (\" + o1 + \", \" + o2 + \", \" + o3 + \", \" + o4 + \", \" + vt + \", '\" + t + \"')\";\n\n// Store the SQL statement in msg.topic\nmsg.topic = sql;\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 560,
+        "wires": [
+            [
+                "aaa9778cd75b1bea"
+            ]
+        ]
+    },
+    {
+        "id": "93150bc8c1e66f68",
+        "type": "ui_table",
+        "z": "02998db8a31c49fe",
+        "group": "6597e2b654c86771",
+        "name": "",
+        "order": 0,
+        "width": "20",
+        "height": "20",
+        "columns": [
+            {
+                "field": "o1",
+                "title": "nhiet do o bi 1",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "o2",
+                "title": "nhiet do o bi 2",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "o3",
+                "title": "nhiet do o bi 3",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "o4",
+                "title": "nhiet do o bi 4",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "vt",
+                "title": "vận tốc thực tế",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "t",
+                "title": "time",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 790,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "7aa2522c413a29e7",
+        "type": "mysql",
+        "z": "02998db8a31c49fe",
+        "mydb": "949fd4a09f36ac6b",
+        "name": "",
+        "x": 590,
+        "y": 640,
+        "wires": [
+            [
+                "93150bc8c1e66f68"
+            ]
+        ]
+    },
+    {
+        "id": "3182fa4d0a74835d",
+        "type": "function",
+        "z": "02998db8a31c49fe",
+        "name": "function 15",
+        "func": "// Truy vấn SQL SELECT\nvar sqlQuery = \"SELECT t, o1, o2, o3, o4, vt FROM `database` WHERE 1\";\n\n// Thiết lập truy vấn SQL vào msg.topic\nmsg.topic = sqlQuery;\n\n// Trả về msg để gửi tiếp đến node tiếp theo trong flow\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 640,
+        "wires": [
+            [
+                "7aa2522c413a29e7"
+            ]
+        ]
+    },
+    {
+        "id": "f89ed9dee552a2cb",
+        "type": "ui_button",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "group": "6597e2b654c86771",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Update Data",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 640,
+        "wires": [
+            [
+                "3182fa4d0a74835d"
+            ]
+        ]
+    },
+    {
+        "id": "5444f1533534511f",
+        "type": "excel",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "file": "C:\\Users\\Quang\\Documents\\alpha.xlsx",
+        "x": 790,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5836371d6fe28bb0",
+        "type": "mysql",
+        "z": "02998db8a31c49fe",
+        "mydb": "949fd4a09f36ac6b",
+        "name": "",
+        "x": 590,
+        "y": 700,
+        "wires": [
+            [
+                "5444f1533534511f"
+            ]
+        ]
+    },
+    {
+        "id": "a7e2eacd26de575c",
+        "type": "ui_button",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "group": "6597e2b654c86771",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Save Data",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 700,
+        "wires": [
+            [
+                "207d82dbdca3f088"
+            ]
+        ]
+    },
+    {
+        "id": "207d82dbdca3f088",
+        "type": "function",
+        "z": "02998db8a31c49fe",
+        "name": "function 17",
+        "func": "// Truy vấn SQL SELECT\nvar sqlQuery = \"SELECT o1, o2, o3, o4, vt, t FROM `database` WHERE 1\";\n\n// Thiết lập truy vấn SQL vào msg.topic\nmsg.topic = sqlQuery;\n\n// Trả về msg để gửi tiếp đến node tiếp theo trong flow\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 700,
+        "wires": [
+            [
+                "5836371d6fe28bb0"
+            ]
+        ]
+    },
+    {
+        "id": "9cbb167fb894cddf",
+        "type": "ui_table",
+        "z": "02998db8a31c49fe",
+        "group": "fa796a32ad8f2af0",
+        "name": "",
+        "order": 1,
+        "width": 12,
+        "height": 5,
+        "columns": [
+            {
+                "field": "tk",
+                "title": "Tên đăng nhập",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "xl",
+                "title": "Quyền truy cập",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 810,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "c8efa9c37b989bf5",
+        "type": "mysql",
+        "z": "02998db8a31c49fe",
+        "mydb": "949fd4a09f36ac6b",
+        "name": "",
+        "x": 590,
+        "y": 1320,
+        "wires": [
+            [
+                "9cbb167fb894cddf"
+            ]
+        ]
+    },
+    {
+        "id": "73b8b7e3cf94210b",
+        "type": "function",
+        "z": "02998db8a31c49fe",
+        "name": "function 21",
+        "func": "// Truy vấn SQL SELECT\nvar sqlQuery = \"SELECT `tk`, `xl` FROM `taikhoan` WHERE 1\";\n\n// Thiết lập truy vấn SQL vào msg.topic\nmsg.topic = sqlQuery;\n\n// Trả về msg để gửi tiếp đến node tiếp theo trong flow\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1320,
+        "wires": [
+            [
+                "c8efa9c37b989bf5"
+            ]
+        ]
+    },
+    {
+        "id": "48474538085f8773",
+        "type": "ui_button",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "group": "fa796a32ad8f2af0",
+        "order": 2,
+        "width": 12,
+        "height": 1,
+        "passthru": false,
+        "label": "Danh sách tài khoản",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 1320,
+        "wires": [
+            [
+                "73b8b7e3cf94210b"
+            ]
+        ]
+    },
+    {
+        "id": "a40626587e1a248c",
+        "type": "ui_form",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "label": "",
+        "group": "fa796a32ad8f2af0",
+        "order": 3,
+        "width": 12,
+        "height": 1,
+        "options": [
+            {
+                "label": "Tên tài khoản",
+                "value": "tk",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "tk": ""
+        },
+        "payload": "",
+        "submit": "Tìm kiếm",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 110,
+        "y": 1400,
+        "wires": [
+            [
+                "c3207933af4c730f"
+            ]
+        ]
+    },
+    {
+        "id": "c3207933af4c730f",
+        "type": "function",
+        "z": "02998db8a31c49fe",
+        "name": "function 22",
+        "func": "msg.topic = \"SELECT tk, xl FROM taikhoan WHERE tk = ?\";\nmsg.payload = [msg.payload.tk];\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1400,
+        "wires": [
+            [
+                "c8efa9c37b989bf5"
+            ]
+        ]
+    },
+    {
+        "id": "dfa8523274adf58e",
+        "type": "function",
+        "z": "02998db8a31c49fe",
+        "name": "function 24",
+        "func": "// Lấy giá trị tk cần xóa từ dữ liệu đầu vào\nvar tkXoa = msg.payload.tk;\n\n// Tạo câu lệnh SQL xóa cả hàng\nvar sql = \"DELETE FROM taikhoan WHERE tk = '\" + tkXoa + \"'\";\n\n// Gán giá trị cho các thuộc tính trong đối tượng msg\nmsg.topic = sql;\nmsg.payload = null;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1480,
+        "wires": [
+            [
+                "fb29755db71fde67"
+            ]
+        ]
+    },
+    {
+        "id": "fb29755db71fde67",
+        "type": "mysql",
+        "z": "02998db8a31c49fe",
+        "mydb": "949fd4a09f36ac6b",
+        "name": "",
+        "x": 630,
+        "y": 1480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "00e9b3e75f8d4fb3",
+        "type": "ui_form",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "label": "",
+        "group": "14087c45d0a4c481",
+        "order": 1,
+        "width": 8,
+        "height": 1,
+        "options": [
+            {
+                "label": "Tên tài khoản",
+                "value": "tk",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Mật khẩu cũ",
+                "value": "mk1",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Mật khẩu mới",
+                "value": "mk2",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Nhập lại mật khẩu mới",
+                "value": "mk3",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "tk": "",
+            "mk1": "",
+            "mk2": "",
+            "mk3": ""
+        },
+        "payload": "",
+        "submit": "Đổi mật khẩu",
+        "cancel": "Cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 150,
+        "y": 2140,
+        "wires": [
+            [
+                "2578a0d84a3e0ebf",
+                "489f07ee96ed6987"
+            ]
+        ]
+    },
+    {
+        "id": "2578a0d84a3e0ebf",
+        "type": "function",
+        "z": "02998db8a31c49fe",
+        "name": "function 25",
+        "func": "// Lấy giá trị từ dữ liệu đầu vào\nvar tk = msg.payload.tk;\nvar mk1 = msg.payload.mk1;\nvar mk2 = msg.payload.mk2;\nvar mk3 = msg.payload.mk3;\n\n// Kiểm tra xem tk và mk1 có trùng với hàng trong bảng taikhoan\n// Sử dụng câu lệnh SELECT trong MySQL để truy vấn cơ sở dữ liệu\nvar sql = \"SELECT * FROM taikhoan WHERE tk = ? AND mk = ?\";\nvar params = [tk, mk1];\n\nmsg.topic = sql;\nmsg.payload = params;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 2180,
+        "wires": [
+            [
+                "489f07ee96ed6987"
+            ]
+        ]
+    },
+    {
+        "id": "698aacd806158bc1",
+        "type": "mysql",
+        "z": "02998db8a31c49fe",
+        "mydb": "949fd4a09f36ac6b",
+        "name": "",
+        "x": 150,
+        "y": 2240,
+        "wires": [
+            [
+                "2578a0d84a3e0ebf"
+            ]
+        ]
+    },
+    {
+        "id": "489f07ee96ed6987",
+        "type": "function",
+        "z": "02998db8a31c49fe",
+        "name": "function 26",
+        "func": "// Kiểm tra kết quả truy vấn\nvar mk2 = msg.payload.mk2;\nvar mk3 = msg.payload.mk3;\nif (msg.payload.length > 0) {\n    // Tài khoản và mật khẩu đúng\n\n    // Kiểm tra mk2 và mk3 có trùng nhau không\n    if (mk2 === mk3) {\n        // Thông báo đổi mật khẩu thành công\n        msg.payload = \"Đổi mật khẩu thành công\";\n    } else {\n        // Thông báo mật khẩu mới không khớp\n        msg.payload = \"Mật khẩu mới không khớp\";\n    }\n} else {\n    // Tài khoản hoặc mật khẩu sai\n    msg.payload = \"Tài khoản hoặc mật khẩu sai\";\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 2140,
+        "wires": [
+            [
+                "467096129b0b8028"
+            ]
+        ]
+    },
+    {
+        "id": "467096129b0b8028",
+        "type": "ui_toast",
+        "z": "02998db8a31c49fe",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 890,
+        "y": 2140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5b0b8c9898afa0eb",
+        "type": "function",
+        "z": "02998db8a31c49fe",
+        "name": "function 28",
+        "func": "var result = msg.payload.lever;\nvar tk = msg.payload.tk;\n\n// Kiểm tra kết quả truy vấn\nif (result.length === 0) {\n    // Tài khoản sai\n    msg.payload = \"Tài khoản sai\";\n} else {\n    // Tài khoản đúng\n\n    // Kiểm tra giá trị msg.payload có trùng với admin, user, hoặc guest không\n    if (msg.payload === \"admin\" || msg.payload === \"user\" || msg.payload === \"guest\") {\n        // Thực hiện truy vấn UPDATE\n        var sqlUpdate = \"UPDATE `taikhoan` SET `xl` = ? WHERE `tk` = ?\";\n        var paramsUpdate = [msg.payload, tk];\n\n        // Gửi truy vấn UPDATE tới node MySQL\n        msg.topic = \"query\";\n        msg.payload = {\n            query: sqlUpdate,\n            params: paramsUpdate\n        };\n\n        // Trả về message để chuyển tới node MySQL để thực hiện truy vấn\n        return msg;\n    } else {\n        // Quyền sử dụng sai\n        msg.payload = \"Quyền sử dụng sai\";\n    }\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1560,
+        "wires": [
+            [
+                "51b0b8ec2208bf20"
+            ]
+        ]
+    },
+    {
+        "id": "51b0b8ec2208bf20",
+        "type": "mysql",
+        "z": "02998db8a31c49fe",
+        "mydb": "949fd4a09f36ac6b",
+        "name": "",
+        "x": 650,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a4fadeab26f4fa85",
+        "type": "ui_form",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "label": "",
+        "group": "0d0710b88942b8f2",
+        "order": 1,
+        "width": 8,
+        "height": 1,
+        "options": [
+            {
+                "label": "Tên đăng nhập",
+                "value": "taikhoan",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Mật khẩu",
+                "value": "matkhau",
+                "type": "password",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Nhập lại mật khẩu",
+                "value": "matkhau2",
+                "type": "password",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Quyền truy cập",
+                "value": "lever",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "taikhoan": "",
+            "matkhau": "",
+            "matkhau2": "",
+            "lever": ""
+        },
+        "payload": "",
+        "submit": "Đăng kí",
+        "cancel": "Clear text",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": false,
+        "className": "",
+        "x": 170,
+        "y": 1820,
+        "wires": [
+            [
+                "cb0b9299defdbe74",
+                "998eaf62a954f2d2"
+            ]
+        ]
+    },
+    {
+        "id": "f522dd4ffe6cb283",
+        "type": "ui_toast",
+        "z": "02998db8a31c49fe",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 650,
+        "y": 1680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cb0b9299defdbe74",
+        "type": "function",
+        "z": "02998db8a31c49fe",
+        "name": "function 23",
+        "func": "var taikhoan = msg.payload.taikhoan;\nvar matkhau = msg.payload.matkhau;\nvar matkhau2 = msg.payload.matkhau2;\nvar lever = msg.payload.lever;\n\n// Kiểm tra nếu các trường không được để trống và mật khẩu khớp\nif (taikhoan && matkhau && matkhau2 === matkhau && (lever === \"admin\" || lever === \"user\" || lever === \"guest\")) {\n    // Gửi dữ liệu đến MySQL\n    msg.topic = \"INSERT INTO taikhoan (tk, mk, xl) VALUES (?, ?, ?)\";\n    msg.payload = [taikhoan, matkhau, lever];\n\n    // Gửi msg tới node MySQL để thực hiện INSERT\n    return msg;\n} else {\n    // Hiển thị thông báo lỗi\n    msg.payload = \"Vui lòng điền đầy đủ thông tin và đảm bảo mật khẩu khớp, cùng với lever là 'admin', 'user' hoặc 'guest'\";\n    return [msg, null];\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 1780,
+        "wires": [
+            [
+                "1e6593d9ee2a435d"
+            ]
+        ]
+    },
+    {
+        "id": "1e6593d9ee2a435d",
+        "type": "mysql",
+        "z": "02998db8a31c49fe",
+        "mydb": "949fd4a09f36ac6b",
+        "name": "",
+        "x": 630,
+        "y": 1780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "998eaf62a954f2d2",
+        "type": "function",
+        "z": "02998db8a31c49fe",
+        "name": "function 30",
+        "func": "var taikhoan = msg.payload.taikhoan;\nvar matkhau = msg.payload.matkhau;\nvar matkhau2 = msg.payload.matkhau2;\nvar lever = msg.payload.lever;\n\n// Kiểm tra nếu các trường không được để trống và mật khẩu khớp\nif (taikhoan && matkhau && matkhau2 === matkhau && (lever === \"admin\" || lever === \"user\" || lever === \"guest\")) {\n    // Gửi thông báo đăng kí thành công\n    msg.payload = \"Đăng kí thành công\";\n\n    // Gửi msg chứa thông báo thành công tới node notification\n    msg.topic = \"Thông báo\";\n    msg.notification = {\n        payload: {\n            message: msg.payload,\n            type: \"Đăng kí thành công\"\n        }\n    };\n\n    return msg;\n} else {\n    // Hiển thị thông báo lỗi\n    msg.payload = \"Vui lòng điền đầy đủ thông tin và đảm bảo mật khẩu khớp, cùng với quyền sử dụng là 'admin', 'user' hoặc 'guest'\";\n\n    // Gửi msg chứa thông báo lỗi tới node notification\n    msg.topic = \"Thông báo\";\n    msg.notification = {\n        payload: {\n            message: msg.payload,\n            type: \"Lỗi\"\n        }\n    };\n\n    return [msg, null];\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 1720,
+        "wires": [
+            [
+                "f522dd4ffe6cb283"
+            ]
+        ]
+    },
+    {
+        "id": "7093af3db5951393",
+        "type": "ui_form",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "label": "",
+        "group": "112c6e1165ba8669",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Tốc độ trục chính",
+                "value": "vt",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "vt": ""
+        },
+        "payload": "",
+        "submit": "OK",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 110,
+        "y": 900,
+        "wires": [
+            [
+                "19823ba622be88d5"
+            ]
+        ]
+    },
+    {
+        "id": "46dcffce60ed2666",
+        "type": "ui_button",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "group": "6597e2b654c86771",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Clear data",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "Bạn có chắc chắn muốn xóa dữ liệu (dữ liệu bị xóa sẽ không thể khôi phục)",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 780,
+        "wires": [
+            [
+                "0549af47648a0115"
+            ]
+        ]
+    },
+    {
+        "id": "6fb126e4f9b838ec",
+        "type": "mysql",
+        "z": "02998db8a31c49fe",
+        "mydb": "949fd4a09f36ac6b",
+        "name": "",
+        "x": 790,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f2efc2480fa90169",
+        "type": "function",
+        "z": "02998db8a31c49fe",
+        "name": "function 32",
+        "func": "// Kiểm tra giá trị nhận được\nif (msg.payload === \"OK\") {\n    // Thực hiện hành động khi nhận được \"ok\"\n    var sqlQuery = \"DELETE FROM `database`\";\n    msg.topic = sqlQuery;\n} else {\n    // Không thực hiện hành động khi nhận được \"cancel\"\n    msg.topic = null;\n}\n\n// Trả về msg để gửi tiếp đến node tiếp theo trong flow\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 780,
+        "wires": [
+            [
+                "6fb126e4f9b838ec"
+            ]
+        ]
+    },
+    {
+        "id": "e15c239caf75bc20",
+        "type": "mqtt in",
+        "z": "02998db8a31c49fe",
+        "name": "mysql",
+        "topic": "thongso",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e54624d3d2676ea8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 560,
+        "wires": [
+            [
+                "098639319cfec11a"
+            ]
+        ]
+    },
+    {
+        "id": "0549af47648a0115",
+        "type": "ui_toast",
+        "z": "02998db8a31c49fe",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "Cancel",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 430,
+        "y": 780,
+        "wires": [
+            [
+                "f2efc2480fa90169"
+            ]
+        ]
+    },
+    {
+        "id": "5271e482f6bad547",
+        "type": "ui_form",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "label": "",
+        "group": "fa796a32ad8f2af0",
+        "order": 4,
+        "width": 12,
+        "height": 1,
+        "options": [
+            {
+                "label": "Tên tài khoản",
+                "value": "tk",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "tk": ""
+        },
+        "payload": "",
+        "submit": "Xóa tài khoản",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 110,
+        "y": 1480,
+        "wires": [
+            [
+                "dfa8523274adf58e"
+            ]
+        ]
+    },
+    {
+        "id": "9ccf5bb1411923ad",
+        "type": "ui_form",
+        "z": "02998db8a31c49fe",
+        "name": "",
+        "label": "",
+        "group": "fa796a32ad8f2af0",
+        "order": 5,
+        "width": 12,
+        "height": 1,
+        "options": [
+            {
+                "label": "Tên tài khoản",
+                "value": "tk",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Quyền truy cập mới",
+                "value": "lever",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "tk": "",
+            "lever": ""
+        },
+        "payload": "",
+        "submit": "Thay đổi quyền truy cập",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 110,
+        "y": 1560,
+        "wires": [
+            [
+                "5b0b8c9898afa0eb",
+                "a04d19ab04a1e6fe"
+            ]
+        ]
+    },
+    {
+        "id": "a04d19ab04a1e6fe",
+        "type": "debug",
+        "z": "02998db8a31c49fe",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 260,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "da698719262a9fc6",
+        "type": "function",
+        "z": "02998db8a31c49fe",
+        "name": "function 33",
+        "func": "// Lấy giá trị từ msg.payload.values[2].v\nvar value = msg.payload.values[4].v;\n\n// Hàm xác định hướng\nfunction determineDirection(value) {\n    if (value < 0) {\n        return \"Trục chính đang quay theo chiều nghịch\";\n    } else {\n        return \"Trục chính đang quay theo chiều thuận\";\n    }\n}\n\n// Lấy giá trị tuyệt đối\nvar absoluteValue = Math.abs(value);\n\n// Gọi hàm determineDirection để xác định hướng\nvar direction = determineDirection(value);\n\n// Gán giá trị tuyệt đối, hướng và giá trị ban đầu vào msg.payload\nmsg.payload = {\n    value: absoluteValue,\n    direction: direction,\n    originalValue: value\n};\n\n// Trả về msg để chuyển đến node tiếp theo\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 100,
+        "wires": [
+            [
+                "71ace546da6aaaa9"
+            ]
+        ]
+    },
+    {
+        "id": "c448d54e0f079d61",
+        "type": "ui_toast",
+        "z": "02998db8a31c49fe",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Thông báo",
+        "name": "",
+        "x": 1990,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dacd1fea7ccfec8c",
+        "type": "function",
+        "z": "02998db8a31c49fe",
+        "name": "function 34",
+        "func": "// Lấy giá trị từ msg.payload.values[4].v\nvar value = msg.payload.values[0].v;\n\n// Kiểm tra nếu giá trị vượt qua 50\nif (value == true) {\n    // Gửi thông báo \"Đã quá tải\"\n    msg.payload = \"CẢNH BÁO: Ổ BI ĐÃ QUÁ NHIỆT\";\n} else {\n    // Không gửi thông báo\n    msg.payload = null;\n}\n\n// Trả về msg để chuyển đến node tiếp theo\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1790,
+        "y": 200,
+        "wires": [
+            [
+                "c448d54e0f079d61"
+            ]
+        ]
+    },
+    {
+        "id": "d0759509c8fc864d",
+        "type": "mqtt in",
+        "z": "02998db8a31c49fe",
+        "name": "obi4",
+        "topic": "quanhiet",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e54624d3d2676ea8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1610,
+        "y": 200,
+        "wires": [
+            [
+                "dacd1fea7ccfec8c",
+                "0e7655af482f8de7"
+            ]
+        ]
+    },
+    {
+        "id": "0e7655af482f8de7",
+        "type": "debug",
+        "z": "02998db8a31c49fe",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1760,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "381e79882b8b18aa",
+        "type": "ui_form",
+        "z": "88dcfe33996d0d5e",
+        "name": "Dashboard Sign-In",
+        "label": "",
+        "group": "2be4f60b5fb39252",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "username",
+                "value": "username",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "password",
+                "value": "password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "username": "",
+            "password": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "",
+        "x": 190,
+        "y": 400,
+        "wires": [
+            [
+                "33a8f3b478f747c7"
+            ]
+        ]
+    },
+    {
+        "id": "35d5e9028f9db936",
+        "type": "switch",
+        "z": "88dcfe33996d0d5e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 910,
+        "y": 400,
+        "wires": [
+            [
+                "b9a1c6aaac15f049",
+                "da631304595e94dd"
+            ],
+            [
+                "0353e4640838d4b2",
+                "98b586c8df40c460"
+            ],
+            [
+                "738771b1a9f8b045",
+                "11cbaca1846cdca6"
+            ],
+            [
+                "33f6657072739056"
+            ]
+        ]
+    },
+    {
+        "id": "b9a1c6aaac15f049",
+        "type": "function",
+        "z": "88dcfe33996d0d5e",
+        "name": "= 0 : admin",
+        "func": "/* activate session timer */\nvar sessionTimer =  flow.get(\"sessionTimer\") || 0; \nvar currTime = Date.now();\nflow.set(\"sessionTimer\", currTime);\nflow.set(\"clientid\", msg.socketid);\n/* ui-control payload */\nmsg.payload = {\n    tabs: {\n        enable: [ \"Tài khoản\"],\n    show: [\"Thông số\", \"Điều khiển\", \"du lieu\" ,\"Tài khoản\"]\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 260,
+        "wires": [
+            [
+                "e1a7f7222955d35a"
+            ]
+        ]
+    },
+    {
+        "id": "33f6657072739056",
+        "type": "function",
+        "z": "88dcfe33996d0d5e",
+        "name": "= 3 : thông báo sai tài khoản hoặc mật khâu",
+        "func": "msg.payload = \" Tài khoản hoặc mật khẩu không chính xác!!!\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 560,
+        "wires": [
+            [
+                "7bc096a72ae35c8d"
+            ]
+        ]
+    },
+    {
+        "id": "e1a7f7222955d35a",
+        "type": "ui_ui_control",
+        "z": "88dcfe33996d0d5e",
+        "name": "đi tới hệ thống",
+        "x": 1660,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "738771b1a9f8b045",
+        "type": "function",
+        "z": "88dcfe33996d0d5e",
+        "name": "= 2 : guest",
+        "func": "/* activate session timer */\nvar sessionTimer = flow.get(\"sessionTimer\") || 0;\nvar currTime = Date.now();\nflow.set(\"sessionTimer\", currTime);\nflow.set(\"clientid\", msg.socketid);\n/* ui-control payload */\nmsg.payload = {\n    tabs: {\n        show: [\"Thông số\"],\n        disable: [\"du lieu\", \"Tài khoản\",\"Điều khiển\"]\n        // disable : [\"Dashboard\"]\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 500,
+        "wires": [
+            [
+                "7ab969d6e525df9a"
+            ]
+        ]
+    },
+    {
+        "id": "0353e4640838d4b2",
+        "type": "function",
+        "z": "88dcfe33996d0d5e",
+        "name": "= 1 : user",
+        "func": "/* activate session timer */\nvar sessionTimer =  flow.get(\"sessionTimer\") || 0; \nvar currTime = Date.now();\nflow.set(\"sessionTimer\", currTime);\nflow.set(\"clientid\", msg.socketid);\n/* ui-control payload */\n\nmsg.payload = { tabs: {\n    show: [\"Thông số\", \"Điều khiển\"],\n    disable:[\"du lieu\",\"Tài khoản\"]\n    }  \n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 380,
+        "wires": [
+            [
+                "1b669f804c1d0fea"
+            ]
+        ]
+    },
+    {
+        "id": "1b669f804c1d0fea",
+        "type": "ui_ui_control",
+        "z": "88dcfe33996d0d5e",
+        "name": "đi tới hệ thống",
+        "x": 1660,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "00454a04e4c8c1fe",
+        "type": "mysql",
+        "z": "88dcfe33996d0d5e",
+        "mydb": "949fd4a09f36ac6b",
+        "name": "MySQL",
+        "x": 540,
+        "y": 400,
+        "wires": [
+            [
+                "fa83da6f47939cb3"
+            ]
+        ]
+    },
+    {
+        "id": "33a8f3b478f747c7",
+        "type": "function",
+        "z": "88dcfe33996d0d5e",
+        "name": "Login",
+        "func": "const username = msg.payload.username;\nconst password = msg.payload.password;\n\n// Tạo câu truy vấn SQL\nmsg.topic = `SELECT xl FROM taikhoan WHERE tk = '${username}' AND mk = '${password}'`;\n\n// Gửi câu truy vấn tới MySQL\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 400,
+        "wires": [
+            [
+                "00454a04e4c8c1fe"
+            ]
+        ]
+    },
+    {
+        "id": "fa83da6f47939cb3",
+        "type": "function",
+        "z": "88dcfe33996d0d5e",
+        "name": "Access Control",
+        "func": "if (msg.payload.length > 0) {\n    const xl = msg.payload[0].xl;\n\n    if (xl === 'admin') {\n        msg.payload = 0;\n    } else if (xl === 'user') {\n        msg.payload = 1;\n    } else {\n        msg.payload = 2;\n    }\n} else {\n    msg.payload = 3;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 400,
+        "wires": [
+            [
+                "35d5e9028f9db936"
+            ]
+        ]
+    },
+    {
+        "id": "7ab969d6e525df9a",
+        "type": "ui_ui_control",
+        "z": "88dcfe33996d0d5e",
+        "name": "đi tới hệ thống",
+        "x": 1660,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e74de514925922ab",
+        "type": "inject",
+        "z": "88dcfe33996d0d5e",
+        "name": "Timer",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "4",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 820,
+        "wires": [
+            [
+                "1b1e8b01683fdf41",
+                "0d3620b157f06730",
+                "5773e238831c3767",
+                "7749a7d8d81a01f2",
+                "228223d8ccd7f502"
+            ]
+        ]
+    },
+    {
+        "id": "2d3599cc06ce3f58",
+        "type": "ui_ui_control",
+        "z": "88dcfe33996d0d5e",
+        "name": "",
+        "events": "all",
+        "x": 1020,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "74df4d2d0e8d4bf6",
+        "type": "ui_ui_control",
+        "z": "88dcfe33996d0d5e",
+        "name": "gửi tới hệ thống",
+        "x": 1660,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "92915a34fae1b68f",
+        "type": "function",
+        "z": "88dcfe33996d0d5e",
+        "name": "",
+        "func": "var msg = {};\nmsg.socketid = flow.get(\"clientid\") || undefined;\nmsg.payload = {\n//     tabs: {\n      \n//         hide: [\"Dashboard\"],\n//         // show: [\"du lieu\"]\n// },\ngroup: {\n\n    show: [\"Dashboard_menu\"],\n    hide: [\"Dashboard_Signin\"]\n} \n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 660,
+        "wires": [
+            [
+                "74df4d2d0e8d4bf6"
+            ]
+        ]
+    },
+    {
+        "id": "0b63fae95f2b473f",
+        "type": "function",
+        "z": "88dcfe33996d0d5e",
+        "name": "Thời gian truy cập",
+        "func": "var sessionTimer =  flow.get(\"sessionTimer\") || 0; \nvar currTime = Date.now();\nif ( sessionTimer === 0 /* Inactive, No user signed in */ ) {\n    msg.payload = 2;\n} else {\n  \n      msg.payload = 1;        \n    }\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 660,
+        "wires": [
+            [
+                "4d2920c844969735"
+            ]
+        ]
+    },
+    {
+        "id": "4d2920c844969735",
+        "type": "switch",
+        "z": "88dcfe33996d0d5e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 750,
+        "y": 660,
+        "wires": [
+            [],
+            [
+                "92915a34fae1b68f"
+            ],
+            [
+                "b3df7804d5c6cd62"
+            ]
+        ]
+    },
+    {
+        "id": "1b1e8b01683fdf41",
+        "type": "ui_button",
+        "z": "88dcfe33996d0d5e",
+        "name": "",
+        "group": "5e3404c48af3a5be",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Thông số",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 480,
+        "y": 720,
+        "wires": [
+            [
+                "732ae5c072fdfb47"
+            ]
+        ]
+    },
+    {
+        "id": "732ae5c072fdfb47",
+        "type": "change",
+        "z": "88dcfe33996d0d5e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"tab\":\"Thông số\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 720,
+        "wires": [
+            [
+                "2d3599cc06ce3f58"
+            ]
+        ]
+    },
+    {
+        "id": "0d3620b157f06730",
+        "type": "ui_button",
+        "z": "88dcfe33996d0d5e",
+        "name": "",
+        "group": "5e3404c48af3a5be",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Điều khiển",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 490,
+        "y": 860,
+        "wires": [
+            [
+                "5674a0999cccad2e"
+            ]
+        ]
+    },
+    {
+        "id": "5674a0999cccad2e",
+        "type": "change",
+        "z": "88dcfe33996d0d5e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"tab\":\"Điều khiển\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 860,
+        "wires": [
+            [
+                "2d3599cc06ce3f58"
+            ]
+        ]
+    },
+    {
+        "id": "5773e238831c3767",
+        "type": "ui_button",
+        "z": "88dcfe33996d0d5e",
+        "name": "",
+        "group": "5e3404c48af3a5be",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Tài khoản",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 480,
+        "y": 760,
+        "wires": [
+            [
+                "794449a4ebca6783"
+            ]
+        ]
+    },
+    {
+        "id": "794449a4ebca6783",
+        "type": "change",
+        "z": "88dcfe33996d0d5e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"tab\":\"Tài khoản\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 760,
+        "wires": [
+            [
+                "2d3599cc06ce3f58"
+            ]
+        ]
+    },
+    {
+        "id": "7749a7d8d81a01f2",
+        "type": "ui_button",
+        "z": "88dcfe33996d0d5e",
+        "name": "",
+        "group": "5e3404c48af3a5be",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Dữ liệu",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 480,
+        "y": 820,
+        "wires": [
+            [
+                "a84bead0c011aeb7"
+            ]
+        ]
+    },
+    {
+        "id": "a84bead0c011aeb7",
+        "type": "change",
+        "z": "88dcfe33996d0d5e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"tab\":\"du lieu\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 820,
+        "wires": [
+            [
+                "2d3599cc06ce3f58"
+            ]
+        ]
+    },
+    {
+        "id": "7bc096a72ae35c8d",
+        "type": "ui_toast",
+        "z": "88dcfe33996d0d5e",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Thông báo",
+        "name": "Thông báo",
+        "x": 1650,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a02a2d839c1850cf",
+        "type": "inject",
+        "z": "88dcfe33996d0d5e",
+        "name": "Timer",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 660,
+        "wires": [
+            [
+                "0b63fae95f2b473f"
+            ]
+        ]
+    },
+    {
+        "id": "228223d8ccd7f502",
+        "type": "ui_button",
+        "z": "88dcfe33996d0d5e",
+        "name": "Đăng xuất",
+        "group": "5e3404c48af3a5be",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "đăng xuất",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "logout",
+        "topicType": "str",
+        "x": 490,
+        "y": 940,
+        "wires": [
+            [
+                "d1f5fc0350f20f01"
+            ]
+        ]
+    },
+    {
+        "id": "d1f5fc0350f20f01",
+        "type": "function",
+        "z": "88dcfe33996d0d5e",
+        "name": "Xử lý Đăng xuất",
+        "func": "if (msg.topic === 'logout') {\n    var msg1 = {\n        payload: { group: { hide: ['Dashboard_menu'], show: ['Dashboard_Signin'] },\n        tabs: {\n            hide: ['Thông số','Điều khiển','du lieu','Tài khoản'],\n            enable: [\"du lieu\", \"Tài khoản\", \"Thông số\",\"Điều khiển\"]\n        } }\n    };\n\n    var msg2 = {\n        payload: 'Session expired! Please sign in again.'\n    };\n\n    var msg3 = {\n        payload: { group: { show: ['Dashboard_Signin'] } }\n    };\n\n    flow.set('sessionTimer', 0);\n    flow.set('clientid', undefined);\n\n    return [msg1, msg2, msg3];\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 940,
+        "wires": [
+            [
+                "486c199afd623d2f",
+                "2d3599cc06ce3f58"
+            ]
+        ]
+    },
+    {
+        "id": "486c199afd623d2f",
+        "type": "function",
+        "z": "88dcfe33996d0d5e",
+        "name": "xử lý đăng xuất",
+        "func": "// Tên của tab muốn mở\nvar targetTab = \"Dashboard\";\n\n// Tạo message mới\nvar newMessage = {\n    topic: \"ui/control\",\n    payload: {\n        command: \"change\",\n        tab: targetTab\n    }\n};\n\n// Gửi message tới MQTT broker\nreturn newMessage;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 1080,
+        "wires": [
+            [
+                "2d3599cc06ce3f58"
+            ]
+        ]
+    },
+    {
+        "id": "da631304595e94dd",
+        "type": "function",
+        "z": "88dcfe33996d0d5e",
+        "name": "= 0 : thông báo quyền truy cập",
+        "func": "msg.payload = \" Bạn đang truy cập dưới quyền admin\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 200,
+        "wires": [
+            [
+                "6285e8e9f5c089a0"
+            ]
+        ]
+    },
+    {
+        "id": "6285e8e9f5c089a0",
+        "type": "ui_toast",
+        "z": "88dcfe33996d0d5e",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Thông báo",
+        "name": "Thông báo",
+        "x": 1650,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "98b586c8df40c460",
+        "type": "function",
+        "z": "88dcfe33996d0d5e",
+        "name": "= 0 : thông báo quyền truy cập",
+        "func": "msg.payload = \" Bạn đang truy cập dưới quyền user\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 320,
+        "wires": [
+            [
+                "78abdd4620f61b8c"
+            ]
+        ]
+    },
+    {
+        "id": "78abdd4620f61b8c",
+        "type": "ui_toast",
+        "z": "88dcfe33996d0d5e",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Thông báo",
+        "name": "Thông báo",
+        "x": 1650,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "11cbaca1846cdca6",
+        "type": "function",
+        "z": "88dcfe33996d0d5e",
+        "name": "= 0 : thông báo quyền truy cập",
+        "func": "msg.payload = \" Bạn đang truy cập dưới quyền guest\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 440,
+        "wires": [
+            [
+                "06bee53f81155900"
+            ]
+        ]
+    },
+    {
+        "id": "06bee53f81155900",
+        "type": "ui_toast",
+        "z": "88dcfe33996d0d5e",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Thông báo",
+        "name": "Thông báo",
+        "x": 1650,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b3df7804d5c6cd62",
+        "type": "function",
+        "z": "88dcfe33996d0d5e",
+        "name": "",
+        "func": "var msg = {};\nmsg.socketid = flow.get(\"clientid\") || undefined;\nmsg.payload = {\n  tabs: {\n    hide: ['Thông số', 'Điều khiển', 'du lieu', 'Tài khoản'],\n    enable: [\"du lieu\", \"Tài khoản\", \"Thông số\", \"Điều khiển\"]\n  } ,\ngroup: {\n\n    hide: [\"Dashboard_menu\"],\n    show: [\"Dashboard_Signin\"]\n} \n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 720,
+        "wires": [
+            [
+                "74df4d2d0e8d4bf6",
+                "050be8a7f5519502"
+            ]
+        ]
+    },
+    {
+        "id": "9ab2b3f1.7b6dc",
+        "type": "ui_ui_control",
+        "z": "88dcfe33996d0d5e",
+        "name": "UI Control",
+        "events": "all",
+        "x": 160,
+        "y": 1260,
+        "wires": [
+            [
+                "dc49ad2f.12e748"
+            ]
+        ]
+    },
+    {
+        "id": "801f6ad2a6811f83",
+        "type": "switch",
+        "z": "88dcfe33996d0d5e",
+        "name": "Logout Check",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "lost",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 620,
+        "y": 1260,
+        "wires": [
+            [
+                "49846cda2bcac2ca"
+            ]
+        ]
+    },
+    {
+        "id": "674a9c267577e720",
+        "type": "ui_ui_control",
+        "z": "88dcfe33996d0d5e",
+        "name": "UI Control",
+        "events": "all",
+        "x": 160,
+        "y": 1440,
+        "wires": [
+            [
+                "f66f914f6d3fe197"
+            ]
+        ]
+    },
+    {
+        "id": "94cc1a17d3a0abd9",
+        "type": "switch",
+        "z": "88dcfe33996d0d5e",
+        "name": "Logout Check",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "connect",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 640,
+        "y": 1440,
+        "wires": [
+            [
+                "83c8db7e06c9bd35"
+            ]
+        ]
+    },
+    {
+        "id": "49846cda2bcac2ca",
+        "type": "function",
+        "z": "88dcfe33996d0d5e",
+        "name": "function 24",
+        "func": "var count = flow.get('notificationCount') || 0; // Lấy giá trị hiện tại của biến đếm, nếu không tồn tại thì gán giá trị 0\n\ncount--; // Tăng giá trị đếm lên 1\n\nflow.set('notificationCount', count); // Lưu giá trị đếm mới vào biến đếm\n\nmsg.payload = count; // Gán giá trị đếm vào payload để gửi đi\n\nreturn msg; // Trả về thông báo\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1260,
+        "wires": [
+            [
+                "36e1aa6c19ba6001"
+            ]
+        ]
+    },
+    {
+        "id": "83c8db7e06c9bd35",
+        "type": "function",
+        "z": "88dcfe33996d0d5e",
+        "name": "function 25",
+        "func": "var countt = flow.get('notificationCount') || 0; // Lấy giá trị hiện tại của biến đếm, nếu không tồn tại thì gán giá trị 0\n\ncountt++; // Tăng giá trị đếm lên 1\n\nflow.set('notificationCount', countt); // Lưu giá trị đếm mới vào biến đếm\n\nmsg.payload = countt; // Gán giá trị đếm vào payload để gửi đi\n\nreturn msg; // Trả về thông báo\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 1440,
+        "wires": [
+            [
+                "36e1aa6c19ba6001"
+            ]
+        ]
+    },
+    {
+        "id": "36e1aa6c19ba6001",
+        "type": "switch",
+        "z": "88dcfe33996d0d5e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1090,
+        "y": 1340,
+        "wires": [
+            [
+                "6d88aa77432d4cca"
+            ]
+        ]
+    },
+    {
+        "id": "6d88aa77432d4cca",
+        "type": "function",
+        "z": "88dcfe33996d0d5e",
+        "name": "Xử lý Đăng xuất",
+        "func": "if (msg.payload===0){\n    var msg1 = {\n        payload: { group: { hide: ['Dashboard_menu'], show: ['Dashboard_Signin'] },\n        tabs: {\n            hide: ['Thông số','Điều khiển','du lieu','Tài khoản']\n        } }\n    }\n\n    flow.set('sessionTimer', 0);\n    flow.set('clientid', undefined);\n\n    return msg1;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 1420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "050be8a7f5519502",
+        "type": "function",
+        "z": "88dcfe33996d0d5e",
+        "name": "function 26",
+        "func": "// Tên của tab muốn mở\nvar targetTab = \"Dashboard\";\n\n// Tạo message mới\nvar newMessage = {\n    topic: \"ui/control\",\n    payload: {\n        command: \"change\",\n        tab: targetTab\n    }\n};\n\n// Gửi message tới MQTT broker\nreturn newMessage;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 800,
+        "wires": [
+            [
+                "74df4d2d0e8d4bf6"
+            ]
+        ]
+    },
+    {
+        "id": "dc49ad2f.12e748",
+        "type": "counter",
+        "z": "88dcfe33996d0d5e",
+        "name": "UI Counter",
+        "init": 0,
+        "step": "",
+        "lower": "",
+        "upper": "",
+        "mode": "decrement",
+        "outputs": "1",
+        "x": 340,
+        "y": 1260,
+        "wires": [
+            [
+                "801f6ad2a6811f83"
+            ]
+        ]
+    },
+    {
+        "id": "f66f914f6d3fe197",
+        "type": "counter",
+        "z": "88dcfe33996d0d5e",
+        "name": "UI Counter",
+        "init": 0,
+        "step": "",
+        "lower": "",
+        "upper": "",
+        "mode": "increment",
+        "outputs": "1",
+        "x": 350,
+        "y": 1440,
+        "wires": [
+            [
+                "94cc1a17d3a0abd9"
+            ]
+        ]
+    }
+]
